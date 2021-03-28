@@ -26,7 +26,7 @@ try {
 selectedCams = selectedCams || selectedCamsStorage.get() || state.selectedCams;
 
 const store = createStore(
-  createReducer(state), // TODO: override selectedCams
+  createReducer({ ...state, selectedCams }),
   composeWithDevTools(applyMiddleware(camelize(), localStorageMiddleware))
 );
 

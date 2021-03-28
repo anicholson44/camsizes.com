@@ -8,7 +8,9 @@ import ShareRackBar from "./ShareRackBar";
 const Rack = () => {
   const selectedCamIds = useSelector(selectors.getSelectedCams);
   const cams = useSelector(selectors.getCams);
-  const selectedCams = Object.keys(selectedCamIds).map(id => cams[Number(id)]);
+  const selectedCams = Object.keys(selectedCamIds).map(
+    (id) => cams[Number(id)]
+  );
   const weight = selectedCams
     .reduce((w, cam) => w + cam.weight * selectedCamIds[cam.id], 0)
     .toFixed(1);
@@ -79,7 +81,7 @@ const Rack = () => {
                 <div className="ticker">
                   {buyLink && (
                     <div className="buy-link">
-                      <a href={buyLink} target="_blank">
+                      <a href={buyLink} target="_blank" rel="noreferrer">
                         <Icon name="cart" />
                       </a>
                     </div>
