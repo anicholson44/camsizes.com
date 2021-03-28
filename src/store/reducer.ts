@@ -2,33 +2,49 @@ import { getType } from "typesafe-actions";
 
 import { RootState, RootAction } from "./types";
 import actions from "./actions";
+import { selectedCamsStorage } from "./middleware/local-storage";
+import entities from "./entities";
 
-const defaultState = ({
-  loading = false,
-  entities = { manufacturers: {}, camStyles: {}, cams: {} },
-  selectedCams = {},
-  highlightedCams = {},
-  highlightedCamRange,
-  showDetailForCam,
-  showDuplicatesInChart = true,
-  showCamMenu = window.screen.width > 768,
-  showRack = window.screen.width > 768,
-  yAxis = "strength",
-}: Partial<RootState>): RootState => ({
-  loading,
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCamsParam = urlParams.get("selectedCams");
+let selectedCams;
+try {
+  selectedCams = selectedCamsParam
+    ? JSON.parse(decodeURI(selectedCamsParam))
+    : undefined;
+} catch (e) {
+  console.error(e);
+}
+selectedCams = selectedCams ||
+  selectedCamsStorage.get() || {
+    1: 1,
+    2: 1,
+    3: 1,
+    4: 1,
+    5: 1,
+    6: 1,
+    7: 1,
+    8: 1,
+    9: 1,
+    10: 1,
+  };
+
+const defaultState: RootState = {
+  loading: false,
   entities,
   selectedCams,
-  highlightedCams,
-  highlightedCamRange,
-  showDetailForCam,
-  showDuplicatesInChart,
-  showCamMenu,
-  showRack,
-  yAxis,
-});
+  highlightedCams: {},
+  showDuplicatesInChart: true,
+  showCamMenu: true,
+  showRack:
+    window.screen.width > 768 &&
+    window.orientation !== 90 &&
+    window.orientation !== -90,
+  yAxis: "strength",
+};
 
 const reducer = (
-  state: RootState = defaultState({}),
+  state: RootState = defaultState,
   action: RootAction
 ): RootState => {
   switch (action.type) {
@@ -53,7 +69,7 @@ const reducer = (
       cams.forEach((id) => {
         delete selectedCams[id];
         if (showDetailForCam === id) {
-          showDetailForCam = defaultState({}).showDetailForCam;
+          showDetailForCam = defaultState.showDetailForCam;
         }
       });
       return {
@@ -80,7 +96,7 @@ const reducer = (
       } else {
         delete selectedCams[action.payload];
         if (action.payload === showDetailForCam) {
-          showDetailForCam = defaultState({}).showDetailForCam;
+          showDetailForCam = defaultState.showDetailForCam;
         }
       }
       return {
@@ -92,8 +108,8 @@ const reducer = (
     case getType(actions.deselectAllCams): {
       return {
         ...state,
-        selectedCams: defaultState({}).selectedCams,
-        showDetailForCam: defaultState({}).showDetailForCam,
+        selectedCams: defaultState.selectedCams,
+        showDetailForCam: defaultState.showDetailForCam,
       };
     }
     case getType(actions.highlightCamStyle): {
@@ -149,7 +165,7 @@ const reducer = (
     case getType(actions.hideCamDetail): {
       return {
         ...state,
-        showDetailForCam: defaultState({}).showDetailForCam,
+        showDetailForCam: defaultState.showDetailForCam,
       };
     }
     case getType(actions.setShowDuplicatesInChart): {
@@ -194,7 +210,4 @@ const reducer = (
   }
 };
 
-export default (initialState: Partial<RootState>) => (
-  state = initialState,
-  action: RootAction
-) => reducer(defaultState(state), action);
+export default reducer;
