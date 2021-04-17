@@ -384,7 +384,7 @@ const entities: RootState["entities"] = {
       weight: 69,
       strength: 6,
       color: "black",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "23": {
       id: 23,
@@ -395,7 +395,7 @@ const entities: RootState["entities"] = {
       weight: 75,
       strength: 8,
       color: "blue",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "24": {
       id: 24,
@@ -406,7 +406,7 @@ const entities: RootState["entities"] = {
       weight: 83,
       strength: 9,
       color: "yellow",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "25": {
       id: 25,
@@ -417,7 +417,7 @@ const entities: RootState["entities"] = {
       weight: 95,
       strength: 10,
       color: "purple",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "26": {
       id: 26,
@@ -428,7 +428,7 @@ const entities: RootState["entities"] = {
       weight: 109,
       strength: 13,
       color: "green",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "27": {
       id: 27,
@@ -439,7 +439,7 @@ const entities: RootState["entities"] = {
       weight: 132,
       strength: 13,
       color: "red",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "28": {
       id: 28,
@@ -450,7 +450,7 @@ const entities: RootState["entities"] = {
       weight: 144,
       strength: 13,
       color: "orange",
-      buyLink: "https://amzn.to/2PPKS9e",
+      buyLink: "https://www.totemmt.com/product/totem-cam/",
     },
     "29": {
       id: 29,
