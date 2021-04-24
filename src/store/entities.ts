@@ -153,7 +153,7 @@ const entities: RootState["entities"] = {
       weight: 69.8,
       strength: 8,
       color: "blue",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "2": {
       id: 2,
@@ -164,7 +164,7 @@ const entities: RootState["entities"] = {
       weight: 77.5,
       strength: 9,
       color: "grey",
-      buyLink: "https://amzn.to/2TqdDdq",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "3": {
       id: 3,
@@ -175,7 +175,7 @@ const entities: RootState["entities"] = {
       weight: 93,
       strength: 12,
       color: "purple",
-      buyLink: "https://amzn.to/2Ie8KPO",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "4": {
       id: 4,
@@ -186,7 +186,7 @@ const entities: RootState["entities"] = {
       weight: 107.5,
       strength: 12,
       color: "green",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "5": {
       id: 5,
@@ -197,7 +197,7 @@ const entities: RootState["entities"] = {
       weight: 123.9,
       strength: 12,
       color: "red",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "6": {
       id: 6,
@@ -208,7 +208,7 @@ const entities: RootState["entities"] = {
       weight: 140.3,
       strength: 12,
       color: "yellow",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "7": {
       id: 7,
@@ -219,7 +219,7 @@ const entities: RootState["entities"] = {
       weight: 181.1,
       strength: 12,
       color: "blue",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "8": {
       id: 8,
@@ -230,7 +230,7 @@ const entities: RootState["entities"] = {
       weight: 257.8,
       strength: 14,
       color: "grey",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "9": {
       id: 9,
@@ -241,7 +241,7 @@ const entities: RootState["entities"] = {
       weight: 348.1,
       strength: 14,
       color: "purple",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "10": {
       id: 10,
@@ -252,7 +252,7 @@ const entities: RootState["entities"] = {
       weight: 529.9,
       strength: 14,
       color: "green",
-      buyLink: "https://amzn.to/3cmq030",
+      buyLink: "https://bit.ly/3nhwAxN",
     },
     "11": {
       id: 11,
@@ -637,7 +637,7 @@ const entities: RootState["entities"] = {
       weight: 61,
       strength: 8,
       color: "grey",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "46": {
       id: 46,
@@ -648,7 +648,7 @@ const entities: RootState["entities"] = {
       weight: 74,
       strength: 10,
       color: "purple",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "47": {
       id: 47,
@@ -659,7 +659,7 @@ const entities: RootState["entities"] = {
       weight: 89,
       strength: 12,
       color: "green",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "48": {
       id: 48,
@@ -670,7 +670,7 @@ const entities: RootState["entities"] = {
       weight: 101,
       strength: 12,
       color: "red",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "49": {
       id: 49,
@@ -681,7 +681,7 @@ const entities: RootState["entities"] = {
       weight: 126,
       strength: 12,
       color: "yellow",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "50": {
       id: 50,
@@ -692,7 +692,7 @@ const entities: RootState["entities"] = {
       weight: 167,
       strength: 12,
       color: "blue",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "51": {
       id: 51,
@@ -703,7 +703,7 @@ const entities: RootState["entities"] = {
       weight: 225,
       strength: 12,
       color: "grey",
-      buyLink: "https://amzn.to/3anUTCq",
+      buyLink: "https://bit.ly/3nkTSTd",
     },
     "52": {
       id: 52,
@@ -714,7 +714,7 @@ const entities: RootState["entities"] = {
       weight: 43,
       strength: 5,
       color: "green",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "53": {
       id: 53,
@@ -725,7 +725,7 @@ const entities: RootState["entities"] = {
       weight: 45,
       strength: 5,
       color: "red",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "54": {
       id: 54,
@@ -736,7 +736,7 @@ const entities: RootState["entities"] = {
       weight: 48,
       strength: 6,
       color: "yellow",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "55": {
       id: 55,
@@ -747,7 +747,7 @@ const entities: RootState["entities"] = {
       weight: 54,
       strength: 8,
       color: "blue",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "56": {
       id: 56,
@@ -758,7 +758,7 @@ const entities: RootState["entities"] = {
       weight: 61,
       strength: 9,
       color: "grey",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "57": {
       id: 57,
@@ -769,7 +769,7 @@ const entities: RootState["entities"] = {
       weight: 77,
       strength: 10,
       color: "purple",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "58": {
       id: 58,
@@ -780,7 +780,7 @@ const entities: RootState["entities"] = {
       weight: 93,
       strength: 10,
       color: "green",
-      buyLink: "https://amzn.to/2TrFhZ5",
+      buyLink: "https://bit.ly/3sLwFe9",
     },
     "59": {
       id: 59,
