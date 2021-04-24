@@ -108,8 +108,8 @@ const reducer = (
     case getType(actions.deselectAllCams): {
       return {
         ...state,
-        selectedCams: defaultState.selectedCams,
-        showDetailForCam: defaultState.showDetailForCam,
+        selectedCams: {},
+        showDetailForCam: null,
       };
     }
     case getType(actions.highlightCamStyle): {
