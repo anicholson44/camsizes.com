@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "com.camsizes.twa",
+                   "sha256_cert_fingerprints": ["52:7A:D4:2E:57:06:1D:FC:2A:8F:9A:CF:F3:D2:6D:6F:10:AD:B9:3C:32:2E:79:60:DB:90:25:43:39:80:90:7F"] }
+    }]
