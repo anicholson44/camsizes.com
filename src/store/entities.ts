@@ -30,7 +30,7 @@ const entities: RootState["entities"] = {
     "6": {
       id: 6,
       name: "Wild Country",
-      camStyles: [12],
+      camStyles: [12, 15],
     },
     "7": {
       id: 7,
